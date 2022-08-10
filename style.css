@@ -1,0 +1,178 @@
+*{
+    margin: 0px; 
+    padding: 0px; 
+}
+
+
+body {
+background-color: green;
+line-height: 100px;
+}
+
+header {
+    display: flex;
+    flex-direction:column;
+    justify-content: center; 
+    align-items : center;
+
+}
+
+div.title-box {
+    background-color: black;
+    position:absolute;
+    z-index: 999;
+    padding: 50px;
+}
+
+header h1 {
+    color: white;
+    font-size: 80px; 
+    text-align: center; 
+    box-shadow: 60px -16px white;
+
+}
+
+header p {
+    color: white;
+    font-size: 40px; 
+    text-align: center; 
+}
+
+*
+ header h1, p, li {
+    font-family: Helvetica, sans-serif;
+   
+
+}
+
+div.slider {
+    overflow: hidden; 
+}
+
+div.slide {
+    opacity : 0.5;
+}
+
+div.slides { 
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    width: calc(500px* 4);
+    height: 720px;
+    animation: glisse 10s infinite ease; 
+
+}
+
+/* Menu de navigation*/
+
+nav.menu{
+    margin-top: 80px;
+}
+
+nav.menu ul li:hover{
+
+    transform: rotate(1turn);
+    transition: 0.3s all;
+}
+
+nav.menu ul li a:hover{
+    color: green;
+}
+
+nav.menu ul {
+    display: flex;
+}
+
+
+nav.menu ul li {
+    list-style-type: none; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.menu ul li a {
+    text-align: center;
+    color:white;
+    font-size: 80px; 
+    text-decoration: none; 
+    
+
+     
+}
+
+.section-menu {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    transform:translateY(-130px);
+}
+
+.nav-item{
+    flex:1;
+    height:500px;
+}
+
+.pizza {
+    background:url(../Images/pizza-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.salade {
+    background:url(../Images/salade-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.burger {
+    background:url(../Images/burger-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boisson {
+    background:url(../Images/boisson-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* Sliders */
+
+@keyframes glisse{
+    0% { 
+        transform: translateX(0);
+    }
+
+    33% {transform : translateX(-500px);
+    
+    }
+
+    66% {
+        transform : translateX(-1200px);
+    
+    }   
+    
+    100% {
+        transform : translateX(0);
+    }
+
+}
+
+/*Section plats */
+
+.item {
+    background-color: whitesmoke;
+    margin:20px;
+}
+
+section {
+    padding: 50px;
+}
+
+img section {
+    width: 300px; 
+}
